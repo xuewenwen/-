@@ -1,0 +1,92 @@
+body {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -moz-user-select: none;
+    max-width: 540px;
+    margin: 0 auto;
+    background: #fafafc;
+    /* text-align: center; */
+}
+
+div{
+        box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.search {
+    /* 固定定位跟父元素没关系，根据屏幕大小有关 */
+    position: fixed;
+    /* background-color: pink; */
+    width: 100%;
+    /*  固定的盒子有宽度 */
+    top: 0;
+    /* fixed模式下自动居中 */
+    /* left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); */
+    height: 44px;
+    min-width: 320px;
+    max-width: 540px;
+    display: flex;
+    background-color: #F6F6F6;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;    
+}
+.search-left{
+    position: relative;
+    /* 子绝父相 */
+    flex: 1;
+    line-height: 26px;
+    height: 26px;
+    border: 1px solid #cccccc;
+    margin:10px 10px;
+    border-radius: 5px;
+    color:#666;
+    font-size:12px ;
+    padding-left: 25px;
+}
+
+.search-left::before{
+   top:5px;
+   left: 5px;
+   content: "";
+   position: absolute;
+   /* display: block; */
+   width: 15px;
+   height: 15px;
+   background: url(1.png) no-repeat -59px -279px;
+   background: 104px auto;
+   /* margin:4px; */
+
+
+
+}
+.search-right{
+  
+     /* background-color:purple; */
+     width: 44px;
+     height: 44px;
+     font-size: 12px;
+     text-align: center;
+     color:#2eaae0;
+     
+     
+}
+.search-right::before{
+ width: 23px;
+ height: 23px;
+ display: block;
+ content: "";
+ background:url(1.png) no-repeat -59px -194px;
+ background-size: 104px auto;
+ margin: 4px auto -2px;
+}
+/* .focus{
+    margin-top:44px
+} */
+.focus img{
+    width:100%;
+
+}
